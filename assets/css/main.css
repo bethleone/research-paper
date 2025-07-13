@@ -2641,9 +2641,16 @@ input, select, textarea {
 			margin: 0;
 		}
 
-		#header .image.avatar {
-			margin: 0 0 1em 0;
-			width: 6.25em;
+		#header .image.avatar img {
+			border-radius: 50%;
+			width: 120px;
+			height: 120px;
+			object-fit: cover;
+			border: 3px solid #e87722;
+			background-color: #0c2340;
+			box-sizing: border-box;
+			display: block;
+			margin: 0 auto;
 		}
 
 /* Footer */
