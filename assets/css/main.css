@@ -3276,5 +3276,13 @@ input, select, textarea {
 	background-color: #c6531b;
 }
 
+.faq-page #sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* space between links */
+  align-items: flex-start;
+}
+
+
 
 	
