@@ -84,5 +84,31 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
 
+  <a href="#" class="button" onclick="openModal(); return false;">View Transition Words</a>
+
+  <div id="pdfModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe src="assets/samples/transition-words-list.pdf" width="100%" height="600px"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById("pdfModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("pdfModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      constant modal = document.getElementById("pdfModal");
+      if (event.target == modal) {
+        closeModal(); 
+      }
+    }
+    </script>
+
 </body>
 </html>
