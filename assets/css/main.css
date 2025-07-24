@@ -2624,6 +2624,7 @@ input, select, textarea {
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 			margin: 0 0 2em 0;
+			padding: 2em 1.5em;
 		}
 
 		#header strong, #header b {
@@ -3257,13 +3258,20 @@ input, select, textarea {
 	background-color: #c65631b;
 }
 
+.sidebar{
+	display: flex;
+	flex-direction: column;
+	gap: 0.75em;
+}
+
 .sidebar-button {
+	overflow: visible;
 	display: block;
 	width: 80%;
-	margin: 0.75em auto;
+	margin: 0.5em 0;
 	background-color: #f26522;
 	color: white;
-	padding: 0.5em 1em;
+	padding: 0.75em 1em;
 	border-radius: 10px;
 	text-decoration: none;
 	font-weight: bold;
@@ -3273,7 +3281,16 @@ input, select, textarea {
 }
 
 .sidebar-button:hover {
+	transform: scale(1.03);
+	z-index: 10;
+	position: relative;
 	background-color: #c6531b;
+}
+#header nav a {
+	display: block;
+	margin: 0.5em 0;
+	padding: 0.75em 1em;
+	transition: transform 0.2s ease;
 }
 
 .faq-page #sidebar {
@@ -3281,7 +3298,7 @@ input, select, textarea {
   flex-direction: column;
   gap: 10px; /* space between links */
   align-items: flex-start;
-}
+
 
 
 
